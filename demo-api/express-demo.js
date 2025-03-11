@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+app.listen(3000)
 
 let nodejsbook = {
     title : "노드",
@@ -16,4 +17,3 @@ app.get('/products/1', function (req, res) {
     res.json(nodejsbook)
 })
 
-app.listen(3000)
